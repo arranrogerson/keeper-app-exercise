@@ -9,8 +9,9 @@ html {
 }
 
 body {
-  background: #303030;
+  background: #000000;
   padding: 0 16px;
+  background-image: url("https://www.transparenttextures.com/patterns/polyester-lite.png");
 }
 
 header {
@@ -40,23 +41,86 @@ footer p {
 }
 
 .note {
-  background: #909090;
+  color: white;
+  background: #505050;
   border-radius: 7px;
-  box-shadow: 0 2px 5px black;
+  box-shadow: 0 2px 5px #000000;
   padding: 10px;
   width: 240px;
   margin: 16px;
   float: left;
 }
-
 .note h1 {
-  font-size: 1 em;
+  font-size: 1.5em;
   margin-bottom: 6px;
 }
-
 .note p {
-  font-size: 1.5 em;
+  font-size: 1.1em;
   margin-bottom: 10px;
   white-space: pre-wrap;
-  word-wrap: break-wrap;
+  word-wrap: break-word;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: white;
+  background-color: darkgoldenrod;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.input-area {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #505050;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px black;
+}
+
+.input-area input {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  color: white;
+  background-color: #505050;
+  font-size: 2em;
+  font-family: inherit;
+  font-weight: bold;
+  resize: none;
+}
+
+.input-area textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  color: white;
+  background-color: #505050;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+
+.input-area button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: darkgoldenrod;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px black;
+  cursor: pointer;
+  outline: none;
 }
